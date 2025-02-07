@@ -1,0 +1,40 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@keyframes blob1 {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.2); }
+  66% { transform: translate(-20px, 20px) scale(0.8); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes blob2 {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-30px, 50px) scale(1.2); }
+  66% { transform: translate(20px, -20px) scale(0.8); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+@keyframes float-slow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(-10deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+.animate-blob1 {
+  animation: blob1 20s infinite;
+}
+.animate-blob2 {
+  animation: blob2 20s infinite;
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+.triangle-clip {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
